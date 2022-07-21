@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizacão da caixa</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 98vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;/*possiciona minha imagen no centro */
+            position: absolute;/*com essa opcao posso altera ond meu conteudo fica alterando left e  top */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*left: 50%;
+            top: 50%;*/
+            transform: translate(-50% -50%);/*normalmente muda a minha caixa deslocando para esquerda  ou cima mais no fucionou aqui estudar mais para ver o problema*/
+            left: 745px;
+            top: 370px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
