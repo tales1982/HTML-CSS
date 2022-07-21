@@ -1,0 +1,23 @@
+body{
+    background-image: url(imagens/wallpaper001.jpg);
+}
+div.quadrado{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+}
+div#q1{
+    background-color: rgb(128, 128, 229);
+}
+div#q2{
+    background-image: linear-gradient(to bottom, yellow,orange);
+}
+div#q3{
+    background-image: url(imagens/pattern001.png);
+}
+/*na 1° maneira e um fundo normal
+  na 2° maneira temos um fundo degradé
+  na 3° maneira temos uma imagens como fundo */
