@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario</h1>
+      <form action="cadastro.php" method="get">
+        <p>
+          <label for="inome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            placeholder="Nome completo"
+            maxlength="30"
+            required
+          />
+        </p>
+        <p>
+          <label for="itel">Telefone:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="itel"
+            autocomplete="tel"
+            required
+            placeholder="(xx) xxxx-xxxx"
+          />
+        </p>
+        <p>
+          <label for="iemail">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            placeholder="@email"
+            required
+          />
+        </p>
+        <!--Estudar mais  RegEx-->
+        <p>
+          <label for="idate">Date de naçimento</label>
+          <input type="date" name="date" id="idate" />
+        </p>
+        <fieldset>
+          <legend>Sexo</legend>
+          <input type="radio" name="Sexo" id="sexMas" value="M" checked /><label
+            for="isexo"
+            >Masculino</label
+          ><!--OBS name="Sexo" tem que ser o mesmo-->
+          <input type="radio" name="Sexo" id="sexFen" value="F" /><label
+            for="sexoFem"
+            >Feminino</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Esporte Favoritos</legend>
+          <br />
+          <input
+            type="checkbox"
+            name="basq"
+            id="ibasq"
+            class="fieldset"
+          /><label for="ibasq">Basquete</label><br />
+          <input type="checkbox" name="fut" id="ifut" class="fieldset" /><label
+            for="ifut"
+            >Futbol</label
+          ><br />
+          <input type="checkbox" name="vol" id="ivol" class="fieldset" /><label
+            for="ivol"
+            >Volei</label
+          ><br />
+          <input type="checkbox" name="hoc" id="ihoc" class="fieldset" /><label
+            for="ihoc"
+            >Hocker</label
+          ><br />
+          <input type="checkbox" name="ten" id="iten" class="fieldset" /><label
+            for="iten"
+            >Tenis</label
+          ><br />
+          <input
+            type="checkbox"
+            name="futs"
+            id="ifuts"
+            class="fieldset"
+          /><label for="ifuts">FutSal</label><br />
+        </fieldset>
+
+        <h2>Outros Dados</h2>
+        <p>
+          <label for="icor">Cor:</label>
+          <input type="color" name="cor" id="icor" />
+        </p>
+        <p>
+          <label for="inivel">Nivel de Sastifaçao</label>
+          <input type="range" name="nivel" id="inivel" min="1" max="50" />
+        </p>
+        <p>
+          <label for="ifoto">Enviar Foto</label>
+          <input type="file" name="foto" id="ifoto" />
+        </p>
+        <h2>Regiao</h2>
+        <p>
+          <label for="iesta">Estados</label>
+          <select name="estado" id="iesta">
+            <option value="" selected>-----Escolha-----</option>
+            <optgroup label="Regiao Sudeste">
+              <option value="MG">Minas Gerais</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">Sao Paulo</option>
+            </optgroup>
+            <optgroup label="Regiao Nordeste">
+              <option value="MA">Maranhao</option>
+              <option value="PE">Pernambuco</option>
+              <option value="RN">RioGrand do Norte</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="iprof">Profissao</label>
+          <input type="text" name="prof" id="iprof" list="lstprof" />
+          <datalist id="lstprof">
+            <option>Administrador</option>
+            <option value="CONT">Contabelista</option><!--Posso ussar o value ou nao minha escolha olha como fica no site OBS tambem posso ussar o (optgrup)-->
+            <option>Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+          </datalist>
+        </p>
+        <h2>Caixa de Mensage</h2>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+        </p>
+        <br />
+        <hr />
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

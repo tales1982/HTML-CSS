@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 100px;
+    margin: 10px;
+    
+}
+h1 {
+    text-align: center;
+}
+nav {
+    background-color: rgb(102, 102, 102);
+    padding: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav>a:hover {
+    background-color: gold;
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+article{
+    background-color: lightgray;
+    padding: 5px;
+}
+section > aside {
+    background-color: rgb(165, 165, 165);
+}
+
+article > aside {
+    background-color: rgb(165, 165, 165);
+}
+
+footer{
+background-color: #181816;
+  text-align: center;
+    color: #f4f4eb;
+    padding: 0px;
+    margin: 0px;
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;/*Para 1 Fixa o Cabeçaro */
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;padding: 10px;
+            background-color: lightgrey;
+        }
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {/*Pate 2 Fixa o Cabeçaro */
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(even) {/*--Efeito Zebrado---posso essar (even--PAR) ou (ADD--IMPAR) ou tambem poso ussar (2n) ou (2n-1)*/
+            background-color: lightgrey;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grande</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION -- Usa para dar uma legenda a minha tabela OBS: nao se ussar TD e nem TH no CAPTION
+            THEAD ---Cabeça
+                TR-TD-TH
+
+            TBODY ---Corpo
+                TR-TD-TH
+
+            TFOOT ---Rodapé
+                TR-TD-TH
+                
+                TR-- Usado para colocar tudo que esta dentro dessa tag na mesma linha.
+                TH-- Usado para titulo da tabela.
+                TD-- Usado para inserir Dados.
+                OBS: importante ussar sempre um SCOPE no meu casso serve pra dizer que os paises pertence a coluna (COL) estado ja os dados da COLUNA Populacao tambe ta na coluna (COL).
+                ja no total de habitanyes esta na mesma linha sendo assin usso o (ROW) que quer dizer na mesma linha.
+    -->
+    <table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:70px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <Td>Minas Gerais</Td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande Do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">2.778.986</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>220.054.593</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

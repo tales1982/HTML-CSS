@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+
+    <style>
+        /*
+        
+        SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+
+        */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(223, 16, 33);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        p::first-line {
+            color: blue;
+            text-transform: uppercase;
+        }
+        a::before {
+            content: '⇒  ';
+            color:  grey;
+
+        }
+        a::after {
+            content:' ⇐';
+            text-decoration:none;
+            font-weight: normal;
+            color: gray;
+        }
+        .especial {
+            background-color: rgb(90, 235, 150);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links.</h1>
+    <ul>
+        <li><a href="https://github.com/tales1982" target="_blank" class="especial">Repositorio GitHub</a></li>
+        <li><a href="https://www.instagram.com/taleslimadepaula/" target="_blank" class="especial">Instagram</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Magnam quos ratione consectetur, ipsam suscipit
+        numquam esse dolore, repellendus velit, quas expedita aliquid itaque quisquam consequuntur ab necessitatibus sit
+        mollitia atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Incidunt mollitia eos, saepe ut
+        officia earum eligendi quos? Ducimus, asperiores. Voluptatum, saepe in! Praesentium odit tempore quo et!
+        Eveniet, veniam quas. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Eum libero perferendis
+        maxime, pariatur saepe atque praesentium, quibusdam delectus eos tenetur quis! Inventore harum earum sit
+        deserunt sunt possimus consequatur doloribus.</p>
+</body>
+
+</html>
