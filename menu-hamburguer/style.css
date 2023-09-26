@@ -4,6 +4,8 @@
     box-sizing: border-box;
     background-color: antiquewhite;
   }
+
+ 
   
   .container {
     display: flex;
@@ -68,13 +70,14 @@
     margin-right: 10PX;
     max-height: 0; /* Inicialmente oculto */
     overflow: hidden; /* Oculta o conteúdo que excede a altura máxima */
-    transition: max-height 1s ease; /* Transição suave para max-height */
+    transition: max-height 0.5s ease; /* Transição suave para max-height */
+    
     
     .container--items2--ul2{
         display: flex;
         flex-direction: column; /* Alterado para uma disposição de coluna */
         align-items: center;
-        width: 300px;
+        width: 300px; /* Este tamanho da div tem que ser o mesmo la em baixo*/
         list-style: none;
         background-color: #333;
         margin: 0;
